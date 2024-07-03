@@ -9,3 +9,5 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get("/data/{id}/{pass}" , [myApi::class,"getData"]);
+
+Route::post("/postData" , [myApi::class,"postData"]);
